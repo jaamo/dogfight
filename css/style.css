@@ -1,0 +1,86 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#pages {
+	width: 768px;
+	height: 1024px;
+	font-family: Lucida Grande;
+	position: absolute;
+	overflow: hidden;
+	background: black;
+}
+
+.page {
+	-webkit-transition: all 0.2s ease-in-out;
+	width: 768px;
+	height: 1024px;
+	background: url(img/muikkeli1.jpg) no-repeat center top;
+	background-position: 0 0;
+	position: absolute;
+}
+
+#logo {
+	-webkit-transition: all 0.8s ease-in-out;
+	position: absolute;
+	left: 550px;
+	top: 20px;
+	opacity: 0.9;
+}
+
+.page.open #logo {
+	opacity: 0.5;
+}
+
+
+.index-menu {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	position: absolute;
+	left: 200px;
+	top: 400px;
+}
+
+.index-menu li {
+	position: relative;
+	padding: 10px;
+	margin: 0 0 10px 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 600px;
+	color: white;	
+	right: -620px;
+	transform:skew(0deg);
+}
+
+.index-menu li:nth-child(1) { -webkit-transition: all 0.2s ease-in-out; }
+.index-menu li:nth-child(2) { -webkit-transition: all 0.3s ease-in-out; }
+.index-menu li:nth-child(3) { -webkit-transition: all 0.4s ease-in-out; }
+.index-menu li:nth-child(4) { -webkit-transition: all 0.5s ease-in-out; }
+.index-menu li:nth-child(5) { -webkit-transition: all 0.6s ease-in-out; }
+.index-menu li:nth-child(6) { -webkit-transition: all 0.7s ease-in-out; }
+.index-menu li:nth-child(7) { -webkit-transition: all 0.8s ease-in-out; }
+.index-menu li:nth-child(8) { -webkit-transition: all 0.9s ease-in-out; }
+
+
+.page.open {
+	background-position: -500px 0;
+}
+
+.page.open li {
+	margin: 0 0 10px 0;
+	right: 0px;
+}
+
+.index-menu li h2 {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.index-menu li span {
+	font-size: 12px;
+	color: #A5A5A5;
+}
